@@ -25,6 +25,30 @@ const jobs = [
     location: 'Remote',
     Salary: '350000 USD',
     color: '#0078D7'
+  },
+  {
+    title: 'Frontend Developer',
+    image: require('../assets/facebook.png'),
+    company: 'Facebook',
+    location: 'Remote',
+    Salary: '200000 USD',
+    color: '#000000'
+  },
+  {
+    title: 'Full Stack Developer',
+    image: require('../assets/splash.png'),
+    company: 'Splash',
+    location: 'Remote',
+    Salary: '250000 USD',
+    color: '#E31837'
+  },
+  {
+    title: 'Mobile Developer',
+    image: require('../assets/amazon.png'),
+    company: 'Amazon',
+    location: 'Remote',
+    Salary: '250000 USD',
+    color: '#FFA500'
   }
 ];
 
