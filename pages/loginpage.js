@@ -24,7 +24,7 @@ export default function LoginPage() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <View>
         <Text style={{ fontSize: 24, marginBottom: 10, fontWeight: 700, color: '#0077dd' }}>Jobizz</Text>
         <Text style={{ fontSize: 28, marginBottom: 10, fontWeight: 750 }}>Welcome Back 👋</Text>
@@ -69,10 +69,10 @@ export default function LoginPage() {
         <Image style={{ height: 25, width: 25 }} source={require('../assets/google.png')} />
         <Image style={{ height: 25, width: 25 }} source={require('../assets/facebook.png')} />
       </View>
-      <View style={{ textAlign: 'center', margin: 'auto' }}>
-        <Text style={{ color: 'grey' }}>Haven't got an account ?<Text style={{ color: '#0077dd', fontWeight: '700' }}>Register</Text></Text>
+      <View style={{ textAlign: 'center'}}>
+        <Text style={{ color: 'grey' , textAlign:'center'}}>Haven't got an account ?<Text style={{ color: '#0077dd', fontWeight: '700' }}>Register</Text></Text>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 
