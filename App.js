@@ -1,28 +1,25 @@
-import { StyleSheet, Text, View } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
+import {NavigationContainer} from '@react-navigation/native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      
-      <StatusBar style="auto" />
-    </View>
+import LoginPage from './pages/loginpage';
+
+import HomePage from './pages/homepage';
+
+
+
+
+const Stack = createNativeStackNavigator();
+
+export default function App(){
+  return(
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Login" component={LoginPage}/>
+
+        <Stack.Screen name="Home" component={HomePage}/>
+        
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'yellow',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  MagnifyingGlassIcon: {
-    color: 'black',
-    top:14,
-    left: 12,
-  }
-});
